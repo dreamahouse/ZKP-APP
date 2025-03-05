@@ -15,10 +15,12 @@ import ImageContent from './components/ImageContent';
 import SliderContent from './components/SliderContent';
 import PhoneIndex from "@/phone/index.jsx";
 import GradientText from "@/components/GradientText.jsx";
+import SplitText from "./components/SplitText";
 import { useState } from 'react';
+import List from "./data/news"
 
-const { Footer, Content } = Layout
-const List = new Array(8).fill(5)
+const { Content } = Layout
+
 const headerStyle = {
   backgroundImage: `url(${content1})`, backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
@@ -180,12 +182,32 @@ function App() {
             <div style={{ padding: '0 170px' }}>
               <h2 style={{
                 ...h2Style, marginBottom: '124px', paddingTop: '280px'
-              }}>{t('home.slogan')}</h2>
+              }}><SplitText
+                  text={t('home.slogan')}
+                  className="text-2xl font-semibold text-center"
+                  delay={150}
+                  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                  easing="easeOutCubic"
+                  threshold={0.2}
+                  rootMargin="-50px"
+                /></h2>
               <ImageContent type="left" />
               <ImageContent type="right" />
             </div>
             <div>
-              <h2 style={{ ...h2Style, marginBottom: '124px', paddingTop: '280px' }}>{t('home.products')}</h2>
+              <h2 style={{ ...h2Style, marginBottom: '124px', paddingTop: '280px' }}>
+                <SplitText
+                  text={t('home.products')}
+                  className="text-2xl font-semibold text-center"
+                  delay={150}
+                  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                  easing="easeOutCubic"
+                  threshold={0.2}
+                  rootMargin="-50px"
+                />
+              </h2>
               <div style={bg3Style}>
                 <div style={text3Style}>
                   <h3 style={h3Style}>{t('home.server')}</h3>
@@ -199,7 +221,16 @@ function App() {
               </div>
             </div>
             <div style={{ marginTop: '340px', marginBottom: '200px' }}>
-              <h2 style={h2Style}>{t('home.newWorld')}</h2>
+              <h2 style={h2Style}><SplitText
+                text={t('home.newWorld')}
+                className="text-2xl font-semibold text-center"
+                delay={150}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+              /></h2>
               <h3 style={{
                 fontSize: '24px',
                 fontWeight: 'normal',
@@ -211,14 +242,32 @@ function App() {
               <IconText />
             </div>
             <div>
-              <h2 style={h2Style}>{t('home.community')}</h2>
+              <h2 style={h2Style}><SplitText
+                text={t('home.community')}
+                className="text-2xl font-semibold text-center"
+                delay={150}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+              /></h2>
               <ContactUs />
             </div>
             <div>
-              <h2 style={{ ...h2Style, marginTop: '164px', marginBottom: '48px' }}>{t('home.news')}</h2>
+              <h2 style={{ ...h2Style, marginTop: '164px', marginBottom: '48px' }}><SplitText
+                text={t('home.news')}
+                className="text-2xl font-semibold text-center"
+                delay={150}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+              /></h2>
               <Flex gap='20px' className='newsContainer'>
-                {List.map((_, index) => (
-                  <Flex vertical justify='space-between' flex='none' key={index} style={{
+                {List.map((i) => (
+                  <Flex vertical justify='space-between' flex='none' key={i.id} style={{
                     padding: '34px 24px',
                     backgroundColor: '#0E0F1A',
                     color: '#fff',
@@ -227,28 +276,26 @@ function App() {
                     width: '340px',
                     height: '340px'
                   }}>
-                    <p style={{
-                      fontSize: '15px',
-                      color: '#F9FCFF',
-                      fontWeight: '500',
-                      lineHeight: '22px'
-                    }}>
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Illo cumque amet
-                      asperiores quis beataeveniam dolores natus ducimus
-                      magnam rerum officiis mollitia, maxime quidem
-                      vitae illum quo aliquid quasi consequatur.
-                    </p>
-                    <Flex justify='space-between'>
+                    <a href={i.url} target='_blank'>
                       <p style={{
-                        fontSize: '16px',
-                        color: '#fff',
-                        fontWeight: 'normal',
-                        lineHeight: '24px'
-                      }}>Ondřej Časta</p>
-                      <Image src={"https://api.dicebear.com/7.x/miniavs/svg?seed=8"} width={40}
-                        preview={false} />
-                    </Flex>
+                        fontSize: '15px',
+                        color: '#F9FCFF',
+                        fontWeight: '500',
+                        lineHeight: '22px'
+                      }}>
+                        {i.content}
+                      </p>
+                      <Flex justify='space-between'>
+                        <p style={{
+                          fontSize: '16px',
+                          color: '#fff',
+                          fontWeight: 'normal',
+                          lineHeight: '24px'
+                        }}>{i.author}</p>
+                        <Image src={i.avatar} width={40}
+                          preview={false} />
+                      </Flex>
+                    </a>
                   </Flex>
                 ))}
 

@@ -57,7 +57,7 @@ table {
 }
 
 .sliderContainer {
-  width: 2178px;
+  width: 100%;
   animation: scroll 18s linear infinite;
 }
 
@@ -92,7 +92,6 @@ table {
   }
 }
 
-
 /* 定义按钮基础样式 */
 .button-with-rotating-light-effect {
   position: relative;
@@ -110,18 +109,18 @@ table {
 
 /* 创建光效元素 */
 .button-with-rotating-light-effect::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
   background: conic-gradient(
-                  from 0deg,
-                  rgba(255, 255, 255, 0) 0%,
-                  rgba(255, 255, 255, 0.8) 25%,
-                  rgba(255, 255, 255, 0) 50%,
-                  rgba(255, 255, 255, 0) 100%
+    from 0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
   );
   animation: rotateLight 2s linear infinite;
   z-index: -1;
@@ -129,13 +128,13 @@ table {
 
 /* 创建遮罩元素，隐藏光效超出按钮的部分 */
 .button-with-rotating-light-effect::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 3px;
   right: 3px;
   bottom: 3px;
-  background: linear-gradient(114deg, #728DD0 0%, #052C8F 100%);
+  background: linear-gradient(114deg, #728dd0 0%, #052c8f 100%);
   border-radius: 3px;
   z-index: -1;
 }
@@ -149,4 +148,3 @@ table {
     transform: rotate(360deg);
   }
 }
-
