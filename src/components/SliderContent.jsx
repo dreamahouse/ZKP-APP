@@ -21,13 +21,11 @@ const list = [
     { url: i10 }
 ]
 
+import SponsorLogos from './SponsorLogos';
+import './SponsorLogos.css';
+
 const SliderContent = () => {
-    return (
-        <Flex gap="46px" className='sliderContainer' flex='none' align='center'>
-            {list.map((i, index) => (
-                <Image key={index} src={i.url} preview={false} />
-            ))}
-        </Flex>
-    )
-}
-export default SliderContent
+    return <SponsorLogos />;
+};
+
+export default SliderContent;

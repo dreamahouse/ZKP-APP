@@ -1,0 +1,33 @@
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.sliderContainer {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    gap: 46px;
+}
+
+/* 覆盖 antd 的默认样式 */
+.slider-image {
+    width: 200px !important;  /* 这里的数值请根据你原始图片的实际尺寸调整 */
+}
+
+.sliderContainer .ant-image {
+    flex: 0 0 auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.sliderContainer:hover {
+    animation-play-state: paused;
+}

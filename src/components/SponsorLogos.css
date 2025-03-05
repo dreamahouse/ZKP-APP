@@ -1,0 +1,39 @@
+.sponsor-container {
+    width: 100%;
+    min-height: 41px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sponsor-scroll {
+    display: flex;
+    height: 100%;
+    animation: scrollX 8s linear infinite; /* 从15s改为8s，提高速度 */
+    will-change: transform;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+    padding: 10px 0;
+}
+
+.logo-group img {
+    height: auto;
+    width: auto;
+    max-height: none;
+    object-fit: contain;
+    transform: scale(0.5);
+    transform-origin: center center;
+}
+
+@keyframes scrollX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% / 2));
+    }
+}
