@@ -7,8 +7,10 @@
 
 .sponsor-scroll {
     display: flex;
+    position: absolute;
     height: 100%;
-    animation: scrollX 8s linear infinite; /* 从15s改为8s，提高速度 */
+    animation: scrollX 8s linear infinite;
+    /* 从15s改为8s，提高速度 */
     will-change: transform;
 }
 
@@ -33,7 +35,8 @@
     from {
         transform: translateX(0);
     }
+
     to {
-        transform: translateX(calc(-100% / 2));
+        transform: translateX(-50%);
     }
 }
