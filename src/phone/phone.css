@@ -1,0 +1,257 @@
+@media screen and (max-width: 760px) {
+    .page-index {
+        display: none;
+    }
+
+    .phone-index-content {
+        background: #01010f;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+
+    .img1-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-max {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 48px;
+        color: #FFFFFF;
+        line-height: 56px;
+        letter-spacing: 3px;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .title-max-des {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 16px;
+        color: #95979E;
+        line-height: 19px;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .start-btn {
+        background: linear-gradient(114deg, #728DD0 0%, #052C8F 100%);
+        box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.06);
+        border-radius: 12px 12px 12px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 48px;
+
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .start-btn-text {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 24px;
+        letter-spacing: 4px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .big-title {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 28px;
+        color: #FFFFFF;
+        line-height: 33px;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .big-title2 {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 16px;
+        color: #F5F5F5;
+        line-height: 19px;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .box1 {
+        background: #000000;
+        border-radius: 12px 12px 12px 12px;
+        border: 1px solid #1E1F30;
+    }
+
+    .big-title2-des {
+        font-family: Alibaba PuHuiTi 2.0, Alibaba PuHuiTi 20;
+        font-weight: normal;
+        font-size: 12px;
+        color: #95979E;
+        line-height: 14px;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .bg-blue {
+        background: #01010f;
+    }
+
+    .icon-box-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .icon-text {
+        font-family: Inter, Inter;
+        font-weight: 500;
+        font-size: 17px;
+        color: #A0A0B8;
+        line-height: 32px;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .news-wrap {
+        /*overflow: auto;*/
+    }
+
+    .link-title {
+        font-family: Inter, Inter;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 32px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .link-item {
+        font-family: Inter, Inter;
+        font-weight: 500;
+        font-size: 14px;
+        color: #A0A0B8;
+        line-height: 32px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+        margin-top: 10px;
+    }
+
+    .copy-right-box {
+        border-top: 1px solid #1d1d2a;
+        padding: 50px 0;
+    }
+
+    .copy-right {
+        font-family: Inter, Inter;
+        font-weight: 500;
+        font-size: 13px;
+        color: #A0A0B8;
+        line-height: 14px;
+        font-style: normal;
+        text-transform: none;
+    }
+
+
+    .sliderContainer2 {
+        width: 100%;
+        animation: scroll 18s linear infinite;
+    }
+
+    /* 定义按钮基础样式 */
+    .button-with-rotating-light-effect {
+        position: relative;
+        /*padding: 15px 30px;*/
+        /*font-size: 16px;*/
+        /*font-weight: bold;*/
+        /*color: #fff;*/
+        /*background-color: #2c3e50;*/
+        border: none;
+        /*border-radius: 5px;*/
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    /* 创建光效元素 */
+    .button-with-rotating-light-effect::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(
+                from 0deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.8) 25%,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0) 100%
+        );
+        animation: rotateLight 2s linear infinite;
+        z-index: -1;
+    }
+
+    /* 创建遮罩元素，隐藏光效超出按钮的部分 */
+    .button-with-rotating-light-effect::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        background: linear-gradient(114deg, #728DD0 0%, #052C8F 100%);
+        border-radius: 3px;
+        z-index: -1;
+    }
+
+    /* 定义旋转动画 */
+    @keyframes rotateLight {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+}
