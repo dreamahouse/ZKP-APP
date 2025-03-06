@@ -223,26 +223,25 @@ const PhoneIndex = () => {
             </div>
 
             <div className='justify-content-between flex' style={{ padding: '0 22%', marginTop: '120px' }}>
-                <div className='icon-box-item'>
+                <div className='icon-box-item' onClick={() => window.open('https://x.com/zkpwhale')}>
                     <Image src={Icon1} preview={false} />
-                    <div className='icon-text' style={{ marginTop: '20px' }}>Twitter</div>
+                    <div className='icon-text' style={{ marginTop: '20px', cursor: 'pointer' }}>Twitter</div>
                 </div>
-                <div className='icon-box-item'>
+                <div className='icon-box-item' onClick={() => window.open('https://t.me/SDAOZK')}>
                     <Image src={Icon2} preview={false} />
-                    <div className='icon-text' style={{ marginTop: '20px' }}>Telegram</div>
+                    <div className='icon-text' style={{ marginTop: '20px', cursor: 'pointer' }}>Telegram</div>
                 </div>
             </div>
             <div className='justify-content-between flex' style={{ padding: '0 22%', marginTop: '120px' }}>
-                <div className='icon-box-item'>
+                <div className='icon-box-item' onClick={() => window.open('https://youtube.com/@sdaozk')}>
                     <Image src={Icon3} preview={false} />
-                    <div className='icon-text' style={{ marginTop: '20px' }}>Youtube</div>
+                    <div className='icon-text' style={{ marginTop: '20px', cursor: 'pointer' }}>Youtube</div>
                 </div>
-                <div className='icon-box-item'>
+                <div className='icon-box-item' onClick={() => window.open('mailto:ZKPwhaleSDAO@gmail.com')}>
                     <Image src={Icon4} preview={false} />
-                    <div className='icon-text' style={{ marginTop: '20px' }}>Email</div>
+                    <div className='icon-text' style={{ marginTop: '20px', cursor: 'pointer' }}>Email</div>
                 </div>
             </div>
-
             <div className='text-center big-title' style={{ marginTop: '150px' }}>
                 <SplitText
                     text={t('home.news')}
@@ -318,9 +317,9 @@ const PhoneIndex = () => {
                 </div>
                 <div style={{ marginTop: '120px', textAlign: 'left' }}>
                     <div className='link-title'>{t('home.joinUs')}</div>
-                    <div className='link-item'>{t('home.twitter')}</div>
-                    <div className='link-item'>{t('home.telegram')}</div>
-                    <div className='link-item'>{t('home.email')}</div>
+                    <div className='link-item' onClick={() => window.open('https://x.com/zkpwhale')} style={{ cursor: 'pointer' }}>{t('home.twitter')}</div>
+                    <div className='link-item' onClick={() => window.open('https://t.me/SDAOZK')} style={{ cursor: 'pointer' }}>{t('home.telegram')}</div>
+                    <div className='link-item' onClick={() => window.open('mailto:ZKPwhaleSDAO@gmail.com')} style={{ cursor: 'pointer' }}>{t('home.email')}</div>
                 </div>
             </div>
             <div className='copy-right-box' style={{ marginTop: '150px', marginBottom: '20px' }}>

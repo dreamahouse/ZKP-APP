@@ -323,19 +323,19 @@ function App() {
                     <td><a href=''>{t('home.vision')}</a></td>
                     <td><a href=''>{t('home.eco')}</a></td>
                     <td><a href=''>{t('home.about')}</a></td>
-                    <td><a href=''>{t('home.twitter')}</a></td>
+                    <td><a href='https://x.com/zkpwhale' target='_blank'>{t('home.twitter')}</a></td>
                   </tr>
                   <tr>
                     <td><a href=''>{t('home.whitepaper')}</a></td>
                     <td><a href=''>{t('home.blog')}</a></td>
                     <td><a href=''>{t('home.jobs')}</a></td>
-                    <td><a href=''>{t('home.telegram')}</a></td>
+                    <td><a href='https://t.me/SDAOZK' target='_blank'>{t('home.telegram')}</a></td>
                   </tr>
                   <tr>
                     <td><a href=''>{t('home.solution')}</a></td>
                     <td><a href=''>{t('home.info')}</a></td>
                     <td><a href=''>{t('home.privacy')}</a></td>
-                    <td><a href=''>{t('home.email')}</a></td>
+                    <td><a href='mailto:ZKPwhaleSDAO@gmail.com'>{t('home.email')}</a></td>
                   </tr>
                 </tbody>
               </table>
